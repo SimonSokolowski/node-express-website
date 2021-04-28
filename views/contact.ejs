@@ -13,12 +13,11 @@
 </head>
 <body>
     <%- include('partials/nav'); %>
-    <h1>Contact Me!</h1>
-    <p>Call me on my phone number: 07507605276, or send me an email at 
-        simon.sokolowski@outlook.com.</p>
+    <h1>Contact Us!</h1>
+    <p>Call send us an email.</p>
     <p><%= qs.dept %></p>
 
-    <form action="" id="contact-form">
+    <form action="/contact" id="contact-form" method="POST">
         <label for="who">Who do you want to contact?</label>
         <input type="text" name="who" value="<%= qs.who %>">
         <label for="department">Which department?</label>
